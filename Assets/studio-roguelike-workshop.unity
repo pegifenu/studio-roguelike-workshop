@@ -368,10 +368,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 124235914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e16d64e2d445b4f8f58d60b7d906ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a445c0c117c85daebc2f38942d750be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 124235920}
+  speed: 5
 --- !u!1001 &260464933
 PrefabInstance:
   m_ObjectHideFlags: 0
