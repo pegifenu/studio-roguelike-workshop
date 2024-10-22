@@ -13,6 +13,7 @@ public class Entity : MonoBehaviour
         public float MovementSpeed;
     }
 
+<<<<<<< HEAD
     [NonSerialized]
     public float CurrentHealth;
 
@@ -20,16 +21,38 @@ public class Entity : MonoBehaviour
 
     public EntityStats stats;
 
+=======
+    public EntityStats stats;
+
+    [NonSerialized]
+    public float CurrentHealth;
+    bool dead = false;
+
+>>>>>>> upstream/workshop-3-complete
     private void Start()
     {
         CurrentHealth = stats.MaxHealth;
     }
 
+<<<<<<< HEAD
+=======
+    public void TakeDamage(float damage)
+    {
+        CurrentHealth -= Mathf.Ceil(damage);
+
+        if (CurrentHealth <=0)
+        {
+            Die();
+        }
+    }
+
+>>>>>>> upstream/workshop-3-complete
     private void Die()
     {
         dead = true;
         Destroy(gameObject);
     }
+<<<<<<< HEAD
 
     public void TakeDamage(float damage)
     {
@@ -45,4 +68,6 @@ public class Entity : MonoBehaviour
             Die();
         }
     }
+=======
+>>>>>>> upstream/workshop-3-complete
 }
