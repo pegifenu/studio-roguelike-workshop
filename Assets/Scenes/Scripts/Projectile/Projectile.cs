@@ -24,11 +24,11 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         
-        if(!other.gameObject.CompareTag(SourceTag))
+        if (!other.gameObject.CompareTag(SourceTag))
         {
             Entity entity = other.GetComponent<Entity>();
 
-            if(entity)
+            if (entity)
             {
                 entity.TakeDamage(damage);
             }
