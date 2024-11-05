@@ -47,12 +47,20 @@ public class MapGenerator : MonoBehaviour
 
         int numRooms = 0;
         // while there are unexplored rooms
-        while (stack.Count > 0)
+        while (stack.Count > 0 && numRooms < maxRooms)
         {
             // get the unexplored room
             Vector2Int current = stack.Pop();
 
             // code here
+            if (current == startCell) 
+            {
+
+            }
+            if (numRooms >= minRooms)
+            {
+                
+            }
         }
         return map;
     }
